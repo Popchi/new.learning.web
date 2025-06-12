@@ -3,12 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <title>Salma Allam</title>
+<style type="text/css">
+body {
+}
+
+.responsive-iframe-container {
+  position: relative; /* Position the container to allow absolute positioning of the iframe */
+  overflow: hidden; /* Hide anything that overflows the container */
+  width: 100%; /* Ensure the container takes up the full width of its parent */
+  padding-top: 56.25%; /*  Maintain a 16:9 aspect ratio (9/16 = 0.5625) */
+}
+
+.responsive-iframe {
+  position: absolute; /* Position the iframe relative to the container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the iframe take up the full width of the container */
+  height: 100%; /* Make the iframe take up the full height of the container */
+}
+    
+    
+</style>
 </head>
 
 
 <body>
     
-    <iframe src="https://new.express.adobe.com/webpage/3UXZisyQaS28J"</iframe>
+    <div class="responsive-iframe-container">
+  <iframe src="https://new.express.adobe.com/webpage/3UXZisyQaS28J" width="1080" height="1920" frameborder="0" allowfullscreen></iframe>
+</div>
+
     
 </body>
 </html>
